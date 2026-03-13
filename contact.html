@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Contact Us – Lofi PLAYBOOK 🎧</title>
+<meta name="description" content="Contact Lofi PLAYBOOK for collaborations, music submissions, sponsorships or just to say hi. We'd love to hear from you!"/>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;700&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="page-styles.css"/>
+</head>
+<body>
+<nav id="navbar">
+  <a href="index.html" class="nav-logo"><div class="nav-logo-icon">🎧</div><span class="nav-logo-text">Lofi PLAYBOOK</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html#songs">Songs</a></li>
+    <li><a href="index.html#vibes">Vibes</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="page-hero">
+  <div class="badge">📬 We Reply Within 24 Hours</div>
+  <h1>Get In Touch</h1>
+  <p>Whether you want to submit your music, collaborate, sponsor, or just say hi — we'd love to hear from you.</p>
+</div>
+
+<div class="page-body">
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-bottom:48px;">
+    <a href="mailto:lofiplaybook@gmail.com" style="text-decoration:none;background:rgba(234,67,53,0.08);border:1px solid rgba(234,67,53,0.2);border-radius:16px;padding:24px;text-align:center;transition:all .3s;display:block;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+      <div style="font-size:36px;margin-bottom:12px;">📧</div>
+      <div style="font-family:'Cinzel',serif;color:var(--text-primary);margin-bottom:6px;font-size:15px;">Email</div>
+      <div style="color:var(--text-muted);font-size:13px;">lofiplaybook@gmail.com</div>
+    </a>
+    <a href="https://www.instagram.com/lofiplaybook" target="_blank" style="text-decoration:none;background:rgba(225,48,108,0.08);border:1px solid rgba(225,48,108,0.2);border-radius:16px;padding:24px;text-align:center;transition:all .3s;display:block;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+      <div style="font-size:36px;margin-bottom:12px;">📸</div>
+      <div style="font-family:'Cinzel',serif;color:var(--text-primary);margin-bottom:6px;font-size:15px;">Instagram</div>
+      <div style="color:var(--text-muted);font-size:13px;">@lofiplaybook</div>
+    </a>
+    <a href="https://www.youtube.com/@LofiPLAYBOOK" target="_blank" style="text-decoration:none;background:rgba(255,68,68,0.08);border:1px solid rgba(255,68,68,0.2);border-radius:16px;padding:24px;text-align:center;transition:all .3s;display:block;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+      <div style="font-size:36px;margin-bottom:12px;">▶️</div>
+      <div style="font-family:'Cinzel',serif;color:var(--text-primary);margin-bottom:6px;font-size:15px;">YouTube</div>
+      <div style="color:var(--text-muted);font-size:13px;">@LofiPLAYBOOK</div>
+    </a>
+    <a href="https://www.facebook.com/profile.php?id=61588580176589" target="_blank" style="text-decoration:none;background:rgba(24,119,242,0.08);border:1px solid rgba(24,119,242,0.2);border-radius:16px;padding:24px;text-align:center;transition:all .3s;display:block;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+      <div style="font-size:36px;margin-bottom:12px;">👤</div>
+      <div style="font-family:'Cinzel',serif;color:var(--text-primary);margin-bottom:6px;font-size:15px;">Facebook</div>
+      <div style="color:var(--text-muted);font-size:13px;">Lofi PLAYBOOK</div>
+    </a>
+  </div>
+
+  <p class="sec-label">✉️ Send a Message</p>
+  <h2 class="sec-title" style="margin-bottom:32px;">Drop Us a Line</h2>
+
+  <div class="contact-form">
+    <div class="form-row">
+      <label class="form-label">YOUR NAME</label>
+      <input class="form-input" type="text" placeholder="e.g. Rahul Sharma"/>
+    </div>
+    <div class="form-row">
+      <label class="form-label">EMAIL ADDRESS</label>
+      <input class="form-input" type="email" placeholder="you@example.com"/>
+    </div>
+    <div class="form-row">
+      <label class="form-label">SUBJECT</label>
+      <select class="form-select">
+        <option value="">Select a topic...</option>
+        <option value="collab">🎵 Music Submission / Collaboration</option>
+        <option value="sponsor">💼 Sponsorship / Brand Deal</option>
+        <option value="article">✍️ Guest Article Proposal</option>
+        <option value="copyright">©️ Copyright / DMCA Issue</option>
+        <option value="feedback">💬 General Feedback</option>
+        <option value="other">🙋 Other</option>
+      </select>
+    </div>
+    <div class="form-row">
+      <label class="form-label">MESSAGE</label>
+      <textarea class="form-textarea" placeholder="Tell us everything... we read every message 🎧"></textarea>
+    </div>
+    <button class="btn-submit" onclick="handleContactSubmit()">Send Message 🎵</button>
+    <p id="contactSuccess" style="display:none;text-align:center;color:var(--teal);margin-top:16px;font-weight:700;">✅ Message sent! We'll get back to you within 24 hours.</p>
+  </div>
+
+  <div class="ad-slot" style="margin-top:48px;"><div class="ad-container"><span class="ad-label">Advertisement</span></div></div>
+
+  <div class="info-box" style="margin-top:40px;">
+    <h3>📬 What We Respond To</h3>
+    <p><strong style="color:var(--text-primary)">Music Submissions</strong> — Send your lofi track for a chance to be featured on our channel and website. Include a YouTube or SoundCloud link.<br/><br/>
+    <strong style="color:var(--text-primary)">Collaborations</strong> — Artists, producers, and content creators welcome.<br/><br/>
+    <strong style="color:var(--text-primary)">Sponsorships</strong> — Headphone brands, music gear, and lifestyle products relevant to our audience.<br/><br/>
+    <strong style="color:var(--text-primary)">Copyright Issues</strong> — We take these seriously and respond within 48 hours.</p>
+  </div>
+</div>
+
+<script>
+function handleContactSubmit(){
+  document.getElementById('contactSuccess').style.display='block';
+  setTimeout(()=>{document.getElementById('contactSuccess').style.display='none';},5000);
+}
+</script>
+
+<footer>
+  <div class="footer-inner">
+    <div><span class="footer-logo">🎧 Lofi PLAYBOOK</span><p class="footer-desc">Your go-to space for slowed & reverb music.</p>
+      <div class="footer-social"><a class="footer-soc-btn fsb-yt" href="https://www.youtube.com/@LofiPLAYBOOK" target="_blank">▶ YouTube</a><a class="footer-soc-btn fsb-ig" href="https://www.instagram.com/lofiplaybook" target="_blank">📸 Instagram</a></div>
+    </div>
+    <div class="footer-col"><h4>Legal</h4><ul><li><a href="about.html">About Us</a></li><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="disclaimer.html">Disclaimer</a></li><li><a href="terms.html">Terms of Use</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><p class="footer-copy">© 2025 Lofi PLAYBOOK • Made with 🎧 & ✨</p></div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
